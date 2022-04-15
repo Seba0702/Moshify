@@ -4,6 +4,7 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-border: #ccc;
 }
 
 *,
@@ -242,6 +243,50 @@ a {
 
 @media screen and (min-width: 1024px) {
   .button {
+    font-size: 1.5rem;
+  }
+}
+
+/* Forms */
+
+.input-text {
+  background-color: white;
+  border-radius: 30px;
+  border-width: 0px;
+  border: 1px solid var(--color-border);
+  color: var(--color-headings);
+  font-size: 2rem;
+  margin: 2rem;
+  outline: 0;
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+
+.input-group {
+  background-color: white;
+  border-radius: 30px;
+  border: 1px solid var(--color-border);
+  margin: 1rem;
+  display: flex;
+}
+
+.input-group .input-text {
+  border: 0;
+  flex-grow: 1;
+}
+
+.input-group .button {
+  margin: 4px;
+}
+
+.input-group--shadow {
+  box-shadow: #918ca4 0px 0px 20px -5px;
+}
+
+@media screen and (min-width: 1024px) {
+  .input-text {
     font-size: 1.5rem;
   }
 }
