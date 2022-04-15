@@ -6,6 +6,12 @@
   --color-body: #918ca4;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /* Typography */
 
 html {
@@ -166,4 +172,76 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Buttons */
+
+.button {
+  border-radius: 40px;
+  padding: 2rem 3rem;
+  font-size: 1.8rem;
+  margin: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-width: 0px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.button--accent {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.button--accent:hover {
+  background-color: #ff5d35;
+  color: white;
+}
+
+.button--outline {
+  background-color: white;
+  border-width: 2px;
+  color: var(--color-headings);
+  border-color: var(--color-headings);
+}
+
+.button--outline:hover {
+  background-color: var(--color-headings);
+  color: white;
+}
+
+.button--block {
+  display: inline-block;
+  width: 100%;
+}
+
+.button--fit {
+  padding: 1.5rem;
+}
+
+.button--primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.button--primary:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.button--secondary {
+  background-color: #64e8ff;
+  color: white;
+}
+
+.button--secondary:hover {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.5rem;
+  }
 }
