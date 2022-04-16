@@ -381,3 +381,22 @@ a {
     font-size: 1.7rem;
   }
 }
+
+/* Media Objects */
+
+.media {
+  display: flex;
+}
+
+.media__title {
+  margin-top: 0;
+}
+
+.media__body {
+  flex: right;
+  margin: 0 2rem;
+}
+
+.media__img {
+  margin-top: 1rem;
+}
