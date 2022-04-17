@@ -556,6 +556,11 @@ a {
 .callout {
   padding: 4rem;
   border-radius: 5px;
+  width: auto;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .callout--primary {
